@@ -26,6 +26,12 @@ TRANSLATION_FEED_ATOM = None
 
 DEFAULT_PAGINATION = False
 
+# For planets plugin.
+PLANET_FEED_ATOM = "feeds/planet.%s.atom.xml"
+import sys;
+sys.path.append('plugins')
+PLUGINS = [ 'planets' ]
+
 # Not using those for the moment.
 LINKS =  ()
 SOCIAL = ()
