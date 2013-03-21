@@ -1,0 +1,383 @@
+/* -----------------------------------------------------------------------
+ Time Flies (version 1.1)
+
+   * description : thème minimal, 1 colonne
+
+   * auteur : David YIM
+     url de support : http://davidyim.fr/
+     e-mail de support : contact@davidyim.fr
+
+   * Modifications by Mounir Lamouri
+
+   * License: CC BY-SA 2.0:
+     http://creativecommons.org/licenses/by-sa/2.0/
+----------------------------------------------------------------------- */
+
+body {
+margin : 0;
+padding : 0;
+background : #fff;
+color : #333;
+width : 100%;
+float : left;
+font-size : 85%;
+line-height : 1.6;
+font-family : Georgia, "Time New Roman", Serif;
+border-top : 5px solid #c31a0e;
+text-align : left;
+}
+h1, h2, h3, h4 {
+color : #333;
+font-weight : normal;
+font-family : Baskerville, Palatino, "Palatino Linotype", Georgia, "Time New Roman", Serif;
+}
+a, a:link, a:visited {
+color : #c31a0e;
+font-weight : normal;
+text-decoration : none;
+}
+a:hover {
+text-decoration : underline;
+}
+ul {
+margin-left : 0;
+list-style : disc;
+}
+blockquote {
+margin-left : -35px;
+margin-right : 0;
+padding-left : 35px;
+background : url('../images/blockquote.png') no-repeat left top;
+}
+pre {
+overflow : auto;
+width : 560px;
+padding : 10px;
+background : #efefef;
+}
+#page {
+margin : 3px 0 0 0;
+padding : 0;
+position : relative;
+border-top : 1px dotted #ccc;
+}
+#top {
+width : 580px;
+margin : 0 auto;
+padding : 0 0 0 0;
+}
+#top h1 {
+margin : 0 0 60px 0;
+padding : 60px 0;
+border-bottom : 1px dashed #d6e3ec;
+}
+#top h1 a {
+text-decoration : none;
+color : #322;
+}
+#prelude {
+position : absolute;
+left : 0;
+top : 0;
+visibility : hidden;
+}
+#wrapper {
+width : 100%;
+float : left;
+border-bottom : 1px solid;
+margin-bottom : 1px;
+}
+#main {
+width : 580px;
+margin : 0 auto;
+padding : 0;
+}
+#content {
+margin : 0;
+padding : 0 0 60px 0;
+width : 560px;
+float : left;
+}
+#content-info,
+#subcategories {
+margin-bottom : 60px;
+}
+#navlinks {
+margin-bottom : 60px;
+padding-bottom : 60px;
+border-bottom : 1px dashed #d6e3ec;
+}
+.post {
+margin : 0 0 60px 0;
+padding : 0 0 40px 0;
+border-bottom : 1px dashed #d6e3ec;
+}
+.post-title {
+font-style : italic;
+font-size : 2.4em;
+}
+.archive-entry a,
+.post-title a {
+text-decoration : none;
+color : #322;
+}
+.post-title a {
+border-bottom : 1px dotted #d6e3ec;
+}
+/* Like a post-title for the moment. */
+.archive-title {
+font-style : italic;
+font-size : 2.4em;
+color : #322;
+border-bottom : 1px dotted #d6e3ec;
+}
+.archive-entry {
+color : #322;
+font-size : 1.5em;
+margin-bottom : 7px;
+margin-left: 25px;
+text-decoration : none;
+}
+.post-info {
+font-size : 0.8em;
+padding : 0;
+font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+color : #666666;
+background : url('../images/calendar.png') no-repeat left center;
+margin-left : -30px;
+padding-left : 30px;
+}
+.post-info a {
+color : #355;
+font-style : italic;
+border-bottom : 1px dotted #d6e3ec;
+}
+.post-tags {
+background : url('../images/tag.png') no-repeat left center;
+margin-left : -30px;
+padding-left : 30px;
+font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+font-size : 0.8em;
+font-style : italic;
+}
+.post-tags li {
+display : inline;
+}
+.post-tags li a {
+color : #355;
+border-bottom : 1px dotted #d6e3ec;
+}
+.post-info-co {
+width : 120px;
+font-size : 1.3em;
+font-style : italic;
+color : #c6dbea;
+margin-left : -135px;
+text-align : right;
+}
+.post-info-co a {
+color : #355;
+font-size : 0.6em;
+font-style : italic;
+font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+display : block;
+border-bottom : 1px dotted #d6e3ec;
+}
+.read-it {
+color : #fff;
+font-style : italic;
+}
+.pagination {
+margin : 0;
+font-size : 1.25em;
+}
+#attachments {
+margin : 0 0 60px 0;
+padding : 0 0 40px 0;
+border-bottom : 1px dashed;
+font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+}
+#attachments ul li {
+background : url('../images/box.png') no-repeat left center;
+margin-left : -30px;
+padding-left : 30px;
+font-size : 0.8em;
+line-height : 2.4;
+}
+#attachments ul li:hover {
+background : url('../images/box-label.png') no-repeat left center;
+}
+#attachments ul li a {
+border-bottom : 1px dotted #dadada;
+padding-bottom : 2px;
+}
+#comments {
+margin : 0 0 60px 0;
+}
+#comments dt,
+#pings dt {
+position : relative;
+font-family : "Lucida Grande", Verdana, Arial, Sans-Serif;
+font-size : 0.85em;
+margin : 0 0 20px 0;
+}
+#comments dt .comment-number,
+#pings dt .ping-number {
+position : absolute;
+left : -25px;
+}
+#comments dd,
+#pings dd,
+#pr dd {
+margin-left : 0;
+margin-bottom : 2em;
+border-bottom : 1px dashed;
+}
+#comment-form {
+margin : 0 0 60px 0;
+font-size : 0.9em
+}
+#comment-form fieldset {
+margin : 0;
+padding : 0;
+border : none;
+}
+#comment-form .field label {
+display : block;
+text-transform : uppercase;
+font-weight : normal;
+font-size : 0.8em;
+letter-spacing : 0.5px;
+}
+#comment-form .field input,
+#comment-form .field textarea {
+font-size : 1em;
+font-family : inherit;
+border : 1px solid #bbb;
+border-right : 1px solid #ddd;
+border-bottom : 1px solid #ddd;
+-moz-border-radius : 3px;
+-webkit-border-radius : 3px;
+padding : 5px;
+background : #efefef;
+}
+#pr {
+margin-top : 60px;
+margin-bottom : 60px;
+}
+.buttons input {
+font-size : 0.85em;
+font-family : inherit;
+background : #c31a0e;
+color : #fff;
+border : none;
+-moz-border-radius : 3px;
+-webkit-border-radius : 3px;
+text-transform : uppercase;
+padding : 5px 10px;
+cursor : pointer;
+}
+#sidebar {
+width : 580px;
+clear : both;
+margin : 0 auto;
+padding : 0;
+border-top : 3px solid;
+}
+#sidebar a {
+border-bottom : 1px dotted #ddd;
+}
+#sidebar #blognav, #sidebar #blogextra {
+width : 100%;
+float : left;
+border-top : 3px double;
+margin : 0;
+padding : 60px 0 0 0;
+}
+#blognav div {
+margin : 0 20px 60px 0;
+}
+#blogextra div {
+margin : 0 20px 60px 0;
+}
+#sidebar h2 {
+font-family : "Helvetica Neue", Arial, Verdana, Sans-Serif;
+font-size : 0.9em;
+text-transform : uppercase;
+font-weight : bold;
+letter-spacing : 1px;
+color : #000;
+}
+#sidebar h3, #sidebar h4 {
+font-family : "Helvetica Neue", Arial, Verdana, Sans-Serif;
+font-weight : 300;
+font-size : 1.2em;
+}
+#sidebar ul li ul {
+margin-bottom : 1em;
+}
+#search fieldset {
+margin : 0;
+padding : 0;
+border : none;
+}
+#search fieldset p {
+margin : 0;
+padding : 0;
+}
+#search fieldset p input#q {
+width : 50%;
+}
+#search fieldset p input.submit {
+margin : 0 0 0 5px;
+cursor : pointer;
+}
+#sidebar .tags ul li, .tags li {
+display : inline;
+}
+#sidebar .tags ul li a {
+border : none;
+}
+#sidebar .tags strong a {
+text-transform : uppercase;
+font-size : 0.8em;
+font-weight : bold;
+letter-spacing : 1px;
+font-style : italic;
+}
+.dc-post .post {
+border-bottom : 4px solid;
+}
+.dc-archive-month .day-date {
+font-size : 1em;
+margin-top : 30px;
+padding-bottom : 10px;
+border-bottom : 2px solid;
+font-family : "Helvetica Neue", Arial, Verdana, Sans-Serif;
+text-transform : uppercase;
+font-size : 0.85em;
+font-weight : bold;
+letter-spacing : 1px;
+}
+.dc-archive-month .post-info {
+margin : 0 0 15px 0;
+padding : 0 0 15px 0;
+background : none;
+border-bottom : 1px dashed;
+}
+#footer {
+width : 100%;
+margin : 0;
+padding : 30px 0;
+font-size : 0.9em;
+background : #000;
+float : left;
+clear : both;
+border-top : 1px solid #242424;
+color : #fff;
+}
+#footer p {
+width : 580px;
+margin : 0 auto;
+padding : 0 0 30px 0;
+}

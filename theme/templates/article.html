@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
+
+{#
+  TODO:
+   - truncate the navigation link text using CSS, not |truncate|.
+   - there is likeley a better way to show the next/previous links.
+#}
+
+{% block content %}
+<div class='post odd first' lang='{{ article.lang }}'>
+  <h2 class='post-title'>{{ article.title }}</h2>
+  <p class='post-info'>By {{ article.author }} on {{ article.date.strftime('%B %d, %Y - %H:%M') }}</p>
+  <p class='post-content'>{{ article.content }}</p>
+</div>
+<p id='navlinks'>
+{% for art in articles %}
+  {% if art == article %}
+    {# Previous #}
+    {% if not loop.last %}
+      {% set previous = articles[loop.index0+1] %}
+  <a class='prev' title='{{ previous.title }}'
+     href='../../{{ previous.url }}'>&#171; {{ previous.title|truncate(42) }}</a>
+    {% endif %}
+    {% if not loop.last and not loop.first %}
+  <span>-</span>
+    {% endif %}
+    {# Next #}
+    {% if not loop.first %}
+      {% set next = articles[loop.index0-1] %}
+  <a class='next' title='{{ next.title }}'
+     href='../../{{next.url }}'>{{ next.title|truncate(42) }} &#187;</a>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</p>
+</div>
+{% endblock %}

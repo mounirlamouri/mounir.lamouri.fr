@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+{#
+ - add language navigator on top
+ - add search on top
+ - add tags on top?
+#}
+-->
+<html lang="en">
+<head>
+  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+  <meta charset='utf-8'>
+
+  <link rel="alternate" type="application/atom+xml" title="{{ SITENAME }} Feed" href='{{ FEEDDOMAIN }}/{{ FEED_ALL_ATOM }}'>
+
+  <link rel="stylesheet" href="/theme/css/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="/theme/css/time-flies.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="/theme/css/print.css" type="text/css" media="print">
+  <!-- TODO: look at how the website look like in IE -->
+  <!--[if IE]>
+  <link rel="stylesheet" href="/theme/css/ie.css" type="text/css" media="screen, projection">
+  <![endif]-->
+</head>
+
+<body>
+<div id="page">
+  <div id='top'>
+    <h1><span><a href='{{ SITEURL }}'>{{ SITENAME }}</a></span></h1>
+  </div>
+
+  <div id="wrapper">
+    <div id="main">
+      <div id="content">
+  {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>Powered by <a href="http://getpelican.com">Pelican</a></p>
+  </div>
+</div>
+
+<!-- TODO: Piwik
+<script type="text/javascript" src="http://analytics.oldworld.fr/piwik.js"></script>
+<script type="text/javascript">//<![CDATA[
+piwik_tracker_pause = 250;
+piwik_log('', 1, 'http://analytics.oldworld.fr/piwik.php');
+//]]>
+</script>
+<noscript><div><img src="http://analytics.oldworld.fr/piwik.php" style="border:0" alt="piwik" width="0" height="0" /></div>
+</noscript>
+<!-- /Piwik -->
+
+</body>
+</html>

@@ -5,6 +5,8 @@ AUTHOR = 'Mounir Lamouri'
 SITENAME = "Mounir Lamouri's Blog"
 SITEURL = ''
 
+THEME = 'theme'
+
 TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'

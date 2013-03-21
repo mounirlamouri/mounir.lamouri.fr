@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }}{% endblock %}
+
+{% block content %}
+{#
+  Current behaviour is the following:
+   - the latest article is shown;
+   - the 5th newest are in the "recent articles" list.
+#}
+{% set full_articles = 1 %}
+{% set recent_articles = 100 %}
+{% for article in articles %}
+  {%if loop.index <= full_articles %}
+  <div class='post odd first' lang='{{ article.lang }}'>
+    <h2 class='post-title'>
+      <a href='{{ article.url }}'>{{ article.title }}</a>
+    </h2>
+    <p class='post-info'>By {{ article.author }} on {{ article.date }}</p>
+    <p class='post-content'>{{ article.content }}</p>
+  </div>
+    {%if loop.index == full_articles and recent_articles > 0 %}
+  <div class='archive'>
+    <h2 class='archive-title'>Recent articles</h2>
+    {% endif %}
+  {% elif loop.index <= (full_articles + recent_articles) %}
+      <h3 class='archive-entry'>
+        <a href='{{ article.url }}'>{{ article.title }}</a>
+      </h3>
+  {% endif %}
+{% endfor %}
+{% if recent_articles > 0 %}
+  </div>
+{% endif %}
+{% endblock %}
