@@ -1,22 +1,25 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u'Mounir Lamouri'
-SITENAME = u"Mounir Lamouri's Blog"
+AUTHOR = 'Mounir Lamouri'
+SITENAME = "Mounir Lamouri's Blog"
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/London'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = 'en'
 
-# Blogroll
-LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
-          ('Python.org', 'http://python.org'),
-          ('Jinja2', 'http://jinja.pocoo.org'),
-          ('You can modify those links in your config file', '#'),)
+ARTICLE_URL='{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_SAVE_AS='{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_LANG_URL='{date:%Y}/{date:%m}/{slug}-{lang}.html'
+ARTICLE_LANG_SAVE_AS='{date:%Y}/{date:%m}/{slug}-{lang}.html'
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+# Feeds settings.
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
 
 DEFAULT_PAGINATION = False
+
+# Not using those for the moment.
+LINKS =  ()
+SOCIAL = ()
