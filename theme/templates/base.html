@@ -41,16 +41,21 @@
   </div>
 </div>
 
-<!-- TODO: Piwik
-<script type="text/javascript" src="http://analytics.oldworld.fr/piwik.js"></script>
-<script type="text/javascript">//<![CDATA[
-piwik_tracker_pause = 250;
-piwik_log('', 1, 'http://analytics.oldworld.fr/piwik.php');
-//]]>
+<!-- Piwik -->
+<script type="text/javascript"> 
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.lamouri.fr//";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
-<noscript><div><img src="http://analytics.oldworld.fr/piwik.php" style="border:0" alt="piwik" width="0" height="0" /></div>
-</noscript>
-<!-- /Piwik -->
+<noscript><p><img src="http://analytics.lamouri.fr/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Code -->
 
 </body>
 </html>
