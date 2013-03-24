@@ -7,18 +7,12 @@ First of all, the progress element is going to be available with the
 next version of Firefox and is already available in the Beta, Aurora and
 Nightly [channels](https://www.mozilla.com/firefox/channel/).
 
-<div>
-<div>Progress element:</div>
+Progress element:  
 <progress value="0.75"><small>*Your browser does not support the
-progress element!*</small></progress>
-</div>
-
-<div>
-<div>Indeterminate progress element:</div>
+progress element!*</small></progress>  
+Indeterminate progress element:  
 <progress><small>*Your browser does not support the progress
 element!*</small></progress>
-</div>
-<br>
 
 According to the specifications, and as you might imagine, <q>"the
 progress element represents the completion progress of a

@@ -1,20 +1,20 @@
-Title: Lecture about Mozilla at INSA Lyon
+Title: Presentation about Mozilla at INSA Lyon
 Date: 2009-11-17 11:11
 Tags: insa lyon, mozilla
 
-Last Friday (November 13 2009), I gave a lecture/conference titled
+Last Friday (November 13 2009), I gave a presentation titled
 *Mozilla and its technologies* in the context of the [Mozilla Campus
 Reps](http://www.spreadfirefox.com/campusreps) program. Indeed, I am a Mozilla
 Campus Rep at [INSA Lyon](http://www.insa-lyon.fr/en), my university.
 
-The lecture had four parts. First of them was a classic presentation of
+The presentation had four parts. First of them was a classic presentation of
 Mozilla and Netscape history. Then, a presentation of some Mozilla
 projects like applications, libraries, tools and especially [Mozilla
 Labs](https://mozillalabs.com/). The real technical part was about the Mozilla Platform (Gecko,
 XUL, ...). To complete, the Open Web and web standards.
 
 Everything went well. I planned to give a 30-minute to 45-minute length
-lecture with 15 minutes of questions but it looks like I had a lot of
+presentation with 15 minutes of questions but it looks like I had a lot of
 things to say and I talked one hour long. Fortunately, there wasn't a
 lot of questions so I finished in time.  
 The most important is I had only good feedback which is pretty cool for
@@ -25,7 +25,7 @@ asked to Tristan Nitot (Mozilla Europe) who seemed delighted to help.
 Paul Rouget (Mozilla Europe too) also helped with some advices. A big
 thank you to both of them!
 
-Finally, you can download [my slides](http://dl.oldworld.fr/mozilla-campus-reps/lecture-at-insa-lyon.pdf). You can also get the source
+Finally, you can download [my slides](http://dl.oldworld.fr/mozilla-campus-reps/presentation-at-insa-lyon.pdf). You can also get the source
 files [here](http://dl.oldworld.fr/mozilla-campus-reps/). The slides have been
 made in [latex](http://en.wikipedia.org/wiki/LaTeX) with [beamer](http://en.wikipedia.org/wiki/Beamer_%28LaTeX%29).
 All this stuff is available in [Creative Common Attribution 3.0
