@@ -1,6 +1,7 @@
 Title: "Contributing to the Mozilla project" workshop debriefing
 Date: 2010-11-24 18:00
 Tags: mozilla
+Planets: mozilla
 
 Two weeks ago, the 13th of November, Vivien Nicolas, [Pascal Chevrel](http://www.chevrel.org/fr/carnet/)
 and I organized a workshop in the Paris office. The goal of the workshop

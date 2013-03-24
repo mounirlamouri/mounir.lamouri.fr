@@ -1,6 +1,7 @@
 Title: Filter TinderboxPushLog by pusher or revision id
 Date: 2010-09-30 21:38
 Tags: tbpl
+Planets: mozilla
 
 I wrote two small patches [^1] that let you filter tinderboxpushlog
 with the pusher or the revision id. This is available in

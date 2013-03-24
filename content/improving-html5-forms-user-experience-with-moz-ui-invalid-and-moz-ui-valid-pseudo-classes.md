@@ -1,6 +1,7 @@
 Title: Improving HTML5 Forms' user experience with :-moz-ui-invalid and :-moz-ui-valid pseudo-classes
 Date: 2011-05-08 21:00
 Tags: css, firefox, html5
+Planets: mozilla
 
 As you might have noticed, with Firefox 4, we have introduced the form
 validation in the browser. You can have more information about what that

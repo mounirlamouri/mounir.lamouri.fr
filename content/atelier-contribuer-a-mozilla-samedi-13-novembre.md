@@ -1,6 +1,7 @@
 Title: Atelier "Contribuer à Mozilla", samedi 13 novembre
 Date: 2010-11-03 16:27
 Tags: mozilla
+Planets: april, mozfr
 Lang: fr
 
 Samedi 13 novembre, le week-end après l'[Ubuntu Party de Paris](http://ubuntu-paris.org/),

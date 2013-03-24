@@ -1,6 +1,7 @@
 Title: Get your try server builds from TinderboxPushlog
 Date: 2011-03-10 01:17
 Tags: mozilla, tbpl
+Planets: mozilla
 
 Last month, I've added a very simple feature that might help try servers
 users and even people who want to test try server builds. It's currently

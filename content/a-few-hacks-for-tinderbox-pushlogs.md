@@ -1,6 +1,7 @@
 Title: A few hacks for Tinderbox Pushlogs
 Date: 2011-02-11 03:31
 Tags: mozilla, tbpl
+Planets: mozilla
 
 A month ago, I've introduced a few new features in [Tinderbox Pushlog](http://tbpl.mozilla.org)
 and Ehsan threatened me to write a blog post about them, so I do.

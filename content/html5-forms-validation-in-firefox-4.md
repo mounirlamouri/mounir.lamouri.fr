@@ -1,6 +1,7 @@
 Title: HTML5 Forms Validation in Firefox 4
 Date: 2010-11-10 18:00
 Tags: firefox, html5
+Planets: mozilla
 
 HTML5 Forms specifications introduce some new input types, attributes
 and other awesome features. One of the transversal features is native

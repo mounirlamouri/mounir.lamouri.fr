@@ -1,6 +1,7 @@
 Title: The HTML progress element in Firefox
 Date: 2011-07-06 13:37
 Tags: html5, firefox
+Planets: mozilla
 
 First of all, the progress element is going to be available with the
 next version of Firefox and is already available in the Beta, Aurora and

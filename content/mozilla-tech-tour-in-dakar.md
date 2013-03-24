@@ -1,6 +1,7 @@
 Title: Mozilla Tech Tour in Dakar
 Date: 2011-05-26 15:11
 Tags: mozilla, add-on sdk
+Planets: mozilla
 
 During the last week of April, I was part of a team from Mozilla that
 was in Dakar for a Mozilla Tech Tour of a few universities. The team was
