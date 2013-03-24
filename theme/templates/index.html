@@ -8,7 +8,7 @@
    - the 5th newest are in the "recent articles" list.
 #}
 {% set full_articles = 1 %}
-{% set recent_articles = 100 %}
+{% set recent_articles = 2 %}
 {% for article in articles %}
   {%if loop.index <= full_articles %}
   <div class='post odd first' lang='{{ article.lang }}'>
