@@ -18,8 +18,6 @@ ARTICLE_LANG_SAVE_AS='{date:%Y}/{date:%m}/{slug}-{lang}.html'
 
 FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
 
-STATIC_PATHS = [ 'img' ]
-
 # Feeds settings.
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
