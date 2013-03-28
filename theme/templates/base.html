@@ -8,7 +8,7 @@
 -->
 <html lang="en">
 <head>
-  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+  <title>{% block head_title %}{{ SITENAME }}{% endblock %}</title>
   <meta charset='utf-8'>
 
   <link rel="alternate" type="application/atom+xml" title="{{ SITENAME }} Feed" href='{{ FEEDDOMAIN }}/{{ FEED_ALL_ATOM }}'>
@@ -30,7 +30,9 @@
     <a class='img' title='My LinkedIn' href='http://uk.linkedin.com/in/mlamouri/'><img src='/static/images/linkedin.png'></a>
   </div>
   <div id='top'>
-    <h1><span><a href='{{ SITEURL }}'>{{ SITENAME }}</a></span></h1>
+    <h1><span>
+      {% block page_title %}<a href='{{ SITEURL }}'>{{ SITENAME }}</a>{% endblock %}
+    </span></h1>
   </div>
 
   <div id="wrapper">
