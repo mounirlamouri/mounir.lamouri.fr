@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block page_title %}Mounir Lamouri's Resumé{% endblock %}
+{% block head_title %}Mounir Lamouri's Resumé{% endblock %}
+
+{% block content %}
+
+<style>
+  .todo {
+    background-color: red;
+  }
+  li {
+    list-style-type: none;
+  }
+  .title {
+    font-weight: bold;
+  }
+  .title a {
+    color: inherit;
+    font-weight: inherit;
+  }
+  .date {
+    margin-right: 1em;
+  }
+</style>
+
+<section>
+  <h2>Objective</h2>
+
+  <p>I am a Platform Engineer looking for challenging projects that have an
+  impact on people.</p>
+</section>
+
+<section>
+  <h2>Work Experience</h2>
+
+  <ul>
+    <li>
+      <span class='title'><span class='date'>2010 - Present</span>
+      Platform Engineer at <a href='http://mozilla.org'>Mozilla</a></span>
+      <p>
+        <a href='https://wiki.mozilla.org/Modules/All'>Peer</a> for the HAL and
+        DOM modules in Gecko.<br>
+        One of the thirty <a href='https://www.mozilla.org/hacking/reviewers.html#the-super-reviewers'>super-reviewers</a>
+        allowed to review API changes in the Mozilla code base.<br>
+        <br>
+        Working on new APIs for the Web Platform, mostly to support the
+        Firefox&nbsp;OS project and to make the Web competitive against native
+        on Mobile. Involved in most API designs for Firefox&nbsp;OS and
+        implemented a few of them on Firefox Android (Battery Status API,
+        Screen Orientation API, WebSMS and Network Information API).<br>
+        <br>
+        Involved with the W3C specification process. Co-chair of the SysApps
+        working group. Member of the HTML, DAP and WebApps working groups.
+        Editor of the Battery Status API (DAP), the Screen Orientation API
+        (WebApps), the Runtime and Security Model for Web Applications (SysApps)
+        and Network Information API (DAP).<br>
+        <br>
+        Have been implementing HTML5 Forms in Firefox with new features like
+        constraint validation for forms, new HTML elements and new
+        <code>&lt;input&gt;</code> types.<br>
+      </p>
+    </li>
+    <li>
+      <span class='title'><span class='date'>2009</span>
+      <a href='https://developers.google.com/open-source/soc/'>Google Summer of Code</a></span>
+      <p>
+      <div class='todo'>
+        REDUCE THE SIZE
+      </div>
+        Implementation of a Gentoo Portage backend for <a href='http://packagekit.org'>PackageKit</a>.<br>
+        <br>
+        PackageKit is an abstraction layer on top of package managers for Linux
+        distributions. The goal being to simplify package installation and
+        management by allowing applications to query package status or request
+        package installations from an unified API. It also allows a unified
+        cross-distribution GUI to manage packages.<br>
+        <br>
+        The goal of the Summer of Code was to implement a backend for Portage,
+        the main and historical package manager for Gentoo written in Python.
+        This work involved understanding, and extending Portage external APIs
+        but also fixing some Portage bugs and writing new features.<br>
+        <br>
+        The principal challenge of this project was to get involved in two
+        communities at the same time, having to deal with two different APIs
+        written in different languages (C for PackageKit and Python for Portage)
+        and write patches for both of them.<br>
+      </p>
+    </li>
+    <li>
+      <span class='title'><span class='date'>2007 - 2009</span>
+      Gameplay Programmer/Platform Engineer at <a href='http://ubi.com'>Ubisoft</a></span>
+      <div class='todo'>
+        FINISH<br>
+        SURE to keep this merged?
+      </div>
+      <p>
+        I have been working on and off for Ubisoft while 
+        I have been occupying various positions, working on different projects
+      </p>
+    </li>
+    <li>
+      <span class='title'><span class='date'>2006</span>
+      Platform Engineer at <a href='http://dancingdots-studio.com/'>Dancing Dots Studio</a></span>
+      <div class='todo'>
+        REVIEW
+        POSITION?
+      </div>
+      Dancing Dots was a freshly created independent studio in Paris writing its
+      first PC game, "Ride!", based on the Gamebryo engine.<br>
+      <br>
+      During my internship, I wrote a full 2D/3D sound engine based on OpenAL
+      and a GUI engine based on CEGUI. I finally wrote the prototype of a
+      gameplay based on a rhythm game.<br>
+      <br>
+      The entire development was done in C++ in a small team (less than 10
+      people).
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education</h2>
+
+  <p>Master Degree in Computer Sciences and Software Engineering</p>
+</section>
+
+<section>
+  <h2>Free Libre and Open Source Projects</h2>
+
+  <ul>
+    <li>Gentoo Developer</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Languages</h2>
+
+  <p>English, French, others...</p>
+</section>
+
+{% endblock %}
