@@ -73,6 +73,16 @@
     ul {
       padding-left: 0px;
     }
+    abbr {
+      border-bottom: none;
+    }
+    #bestviewed {
+      font-size: 75%;
+      text-align: right;
+      position: absolute;
+      right: 0.5em;
+      top: 2.5em;
+    }
 
     /* from blog theme */
     body {
@@ -89,13 +99,10 @@
 
 <div class='todo'>
   <ul>
-    <li>Print Style</li>
     <li>first re-read</li>
     <li>second re-read</li>
     <li>update LinkedIn</li>
-    <li>fix chrome</li>
     <li>test IE</li>
-    <li>test Safari</li>
   </ul>
 </div>
 
@@ -105,7 +112,7 @@
     <address><a href='mailto:mounir@lamouri.fr'>mounir@lamouri.fr</a></address>
   </div>
   <div id='bestviewed'>
-    Best viewed with a browser:
+    Best viewed in a browser:<br>
     <a href='http://mounir.lamouri.fr/resume.html'>http://mounir.lamouri.fr/resume.html</a>
   </div>
 </header>
@@ -288,6 +295,7 @@
     <div class='title'><span class='date'>2008</span>
       3D pinball game with a level editor
     </div>
+    <div class='todo'>re-write, hard to understand; hard to understand it's a game development</div>
     <p>With a <code>C++</code> backend, the game was offering a level editor in
     <code>Java</code>, using <code>XML</code> to represent each level. I was
     leading the team and managing the project.</p>
@@ -300,6 +308,7 @@
   <li>
     <div class='title'><span class='date'>2006 - 2007</span>
     3D shoot'em up on MacOS X and Linux</div>
+    <div class='todo'>hard to understand it's a game development</div>
     <p>I wrote the physics engine, the rendering engine on top of OpenGL and
     Glut and the sound engine on top of OpenAL.</p>
   </li>
