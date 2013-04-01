@@ -8,27 +8,126 @@
 <style>
   .todo {
     background-color: red;
+    position: absolute;
+    left: 0px;
   }
   li {
     list-style-type: none;
   }
   .title {
     font-weight: bold;
+    margin-bottom: 0.5em;
   }
-  .title a {
-    color: inherit;
-    font-weight: inherit;
+  .title small {
+    font-weight: normal;
   }
   .date {
     margin-right: 1em;
   }
+  p {
+    margin-bottom: 0.75em;
+  }
+  address {
+    display: inline-block;
+    margin: 0;
+  }
+  #content a,
+  #content a:link,
+  #content a:visited,
+  #content a:hover {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  @media screen, projection {
+    #name, #bestviewed {
+      display: none;
+    }
+    h2 {
+      margin-top: 1em;
+    }
+    .title {
+      text-indent: -1.5em;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    }
+    #content a {
+      border-bottom: 1px black dotted;
+    }
+  }
+
+  @media print {
+    .todo { display: none; }
+
+    #links, #top, #footer, #email .label {
+      display: none;
+    }
+    #name {
+      display: block;
+    }
+    a:link:after, a:visited:after {
+      content: "";
+    }
+    ul {
+      padding-left: 0px;
+    }
+
+    /* from blog theme */
+    body {
+      color : #333;
+      font-family : Georgia, "Time New Roman", Serif;
+    }
+    h1, h2, h3, h4 {
+      color : #333;
+      font-weight : normal;
+      font-family : Baskerville, Palatino, "Palatino Linotype", Georgia, "Time New Roman", Serif;
+    }
+  }
 </style>
 
+<div class='todo'>
+  <ul>
+    <li>Print Style</li>
+    <li>first re-read</li>
+    <li>second re-read</li>
+    <li>update LinkedIn</li>
+    <li>fix chrome</li>
+    <li>test IE</li>
+    <li>test Safari</li>
+  </ul>
+</div>
+
+<header>
+  <h1 id='name'>Mounir Lamouri</h1>
+  <div id='email'><span class='label'>Contact me:</span>
+    <address><a href='mailto:mounir@lamouri.fr'>mounir@lamouri.fr</a></address>
+  </div>
+  <div id='bestviewed'>
+    Best viewed with a browser:
+    <a href='http://mounir.lamouri.fr/resume.html'>http://mounir.lamouri.fr/resume.html</a>
+  </div>
+</header>
+
 <section>
-  <h2>Objective</h2>
+  <h2>Summary</h2>
 
   <p>I am a Platform Engineer looking for challenging projects that have an
   impact on people.</p>
+
+  <p>I have been working in the video-game industry for a cumulative time of 2
+  years, shipping two AAA games and one independent game. I am since then
+  working on improving the Web Platform with Mozilla.</p>
+
+  <p>I developed a keen interest in Web Standards and designing APIs for the
+  web and would like to keep working on making the Web a better place.</p>
+
+  <p>Regarding code, I like to write clean, simple and tested code. My main
+  programming language is C++ but I have professional experiences with C, Java,
+  Python, Objective-C, Bash, and Javascript/HTML/CSS. However, I believe that a
+  language is a tool and a good software engineer should be able to switch from
+  one to another easily.</p>
 </section>
 
 <section>
@@ -36,85 +135,110 @@
 
   <ul>
     <li>
-      <span class='title'><span class='date'>2010 - Present</span>
-      Platform Engineer at <a href='http://mozilla.org'>Mozilla</a></span>
+      <div class='title'><span class='date'>2010 - Present</span>
+      Senior Platform Engineer at <a href='http://mozilla.org'>Mozilla</a></div>
       <p>
-        <a href='https://wiki.mozilla.org/Modules/All'>Peer</a> for the HAL and
-        DOM modules in Gecko.<br>
-        One of the thirty <a href='https://www.mozilla.org/hacking/reviewers.html#the-super-reviewers'>super-reviewers</a>
-        allowed to review API changes in the Mozilla code base.<br>
-        <br>
-        Working on new APIs for the Web Platform, mostly to support the
-        Firefox&nbsp;OS project and to make the Web competitive against native
-        on Mobile. Involved in most API designs for Firefox&nbsp;OS and
-        implemented a few of them on Firefox Android (Battery Status API,
-        Screen Orientation API, WebSMS and Network Information API).<br>
-        <br>
-        Involved with the W3C specification process. Co-chair of the SysApps
-        working group. Member of the HTML, DAP and WebApps working groups.
-        Editor of the Battery Status API (DAP), the Screen Orientation API
-        (WebApps), the Runtime and Security Model for Web Applications (SysApps)
-        and Network Information API (DAP).<br>
-        <br>
-        Have been implementing HTML5 Forms in Firefox with new features like
-        constraint validation for forms, new HTML elements and new
-        <code>&lt;input&gt;</code> types.<br>
+        I am working on new APIs for the Web Platform, mostly to support the
+        <a href='http://mozilla.org/firefoxos/'>Firefox&nbsp;OS</a> project and
+        to make the Web competitive against native on Mobile. Involved in most
+        API designs for Firefox&nbsp;OS, I have implemented a few of them and
+        pushed some of them to standardization bodies. I also took part of the
+        design of the security model of Firefox&nbsp;OS and implemented key
+        parts of it.
+      </p>
+      <p>
+        As a <a href='https://wiki.mozilla.org/Modules/All'>reviewer</a> for the
+        HAL and HTML/DOM modules and a Mozilla
+        <a href='https://www.mozilla.org/hacking/reviewers.html#the-super-reviewers'>super-reviewer</a>,
+        I do a lot of code reviews and super-reviews.
+      </p>
+      <p>
+        I am also involved with the W3C specification process as a co-chair of
+        the <a href='http://www.w3.org/2012/sysapps/'>SysApps</a> working group
+        and an active member of the <a href='http://whatwg.org'>WHATWG</a>,
+        <a href='http://www.w3.org/html/wg/'>HTML</a>,
+        <a href='http://www.w3.org/2009/dap/'>DAP</a> and
+        <a href='http://www.w3.org/2008/webapps/wiki/Main_Page'>WebApps</a>
+        working groups. I am editor of the
+        <a href='http://www.w3.org/TR/battery-status/'>Battery Status API</a>,
+        the
+        <a href='http://www.w3.org/TR/screen-orientation/'>Screen Orientation API</a>,
+        the
+        <a href='http://runtime.sysapps.org'>Runtime and Security Model for Web Applications</a>
+        and the
+        <a href='http://www.w3.org/TR/netinfo-api/'>Network Information API</a>.
+      </p>
+      <p>
+        I implemented HTML5 Forms in Firefox with new features like constraint
+        validation for forms, new HTML elements and new
+        <code>&lt;input&gt;</code> types. I have also been mentoring a few
+        people who have been contributing to forms.
       </p>
     </li>
     <li>
-      <span class='title'><span class='date'>2009</span>
-      <a href='https://developers.google.com/open-source/soc/'>Google Summer of Code</a></span>
-      <p>
-      <div class='todo'>
-        REDUCE THE SIZE
-      </div>
-        Implementation of a Gentoo Portage backend for <a href='http://packagekit.org'>PackageKit</a>.<br>
-        <br>
-        PackageKit is an abstraction layer on top of package managers for Linux
-        distributions. The goal being to simplify package installation and
-        management by allowing applications to query package status or request
-        package installations from an unified API. It also allows a unified
-        cross-distribution GUI to manage packages.<br>
-        <br>
-        The goal of the Summer of Code was to implement a backend for Portage,
-        the main and historical package manager for Gentoo written in Python.
-        This work involved understanding, and extending Portage external APIs
-        but also fixing some Portage bugs and writing new features.<br>
-        <br>
-        The principal challenge of this project was to get involved in two
-        communities at the same time, having to deal with two different APIs
-        written in different languages (C for PackageKit and Python for Portage)
-        and write patches for both of them.<br>
-      </p>
-    </li>
-    <li>
-      <span class='title'><span class='date'>2007 - 2009</span>
-      Gameplay Programmer/Platform Engineer at <a href='http://ubi.com'>Ubisoft</a></span>
-      <div class='todo'>
-        FINISH<br>
-        SURE to keep this merged?
-      </div>
-      <p>
-        I have been working on and off for Ubisoft while 
-        I have been occupying various positions, working on different projects
-      </p>
-    </li>
-    <li>
-      <span class='title'><span class='date'>2006</span>
-      Platform Engineer at <a href='http://dancingdots-studio.com/'>Dancing Dots Studio</a></span>
-      <div class='todo'>
-        REVIEW
-        POSITION?
-      </div>
-      Dancing Dots was a freshly created independent studio in Paris writing its
-      first PC game, "Ride!", based on the Gamebryo engine.<br>
+      <div class='title'><span class='date'>2009</span>
+      <a href='https://developers.google.com/open-source/soc/'>Google Summer of Code</a>
       <br>
-      During my internship, I wrote a full 2D/3D sound engine based on OpenAL
-      and a GUI engine based on CEGUI. I finally wrote the prototype of a
-      gameplay based on a rhythm game.<br>
-      <br>
-      The entire development was done in C++ in a small team (less than 10
-      people).
+      <small>
+        Google Summer of Code is a Google sponsored 3-month contribution to a
+        <abbr title='Free Libre Open Source Software'>FLOSS</abbr> project.
+      </small>
+      </div>
+      <p>
+        The goal of my Summer of Code was to implement a
+        <a href='https://en.wikipedia.org/wiki/Portage_%28software%29'>Gentoo Portage</a>
+        backend for <a href='http://packagekit.org'>PackageKit</a>, an
+        abstraction layer on top of package managers for Linux distributions.
+        In addition of implementing the backend, this work involved extending
+        Portage APIs, fixing bugs and adding features to Portage and PackageKit.
+      </p>
+    </li>
+    <li>
+      <div class='title'><span class='date'>2007 - 2009</span>
+        Gameplay Programmer/Platform Engineer at
+        <a href='http://ubi.com'>Ubisoft</a>
+      </div>
+      <p>
+        While at university, I have done a few interships and short term
+        contracts at Ubisoft, working on various games at various positions.
+      </p>
+      <p>
+        <b><a href='https://en.wikipedia.org/wiki/Rayman_Raving_Rabbids_2'>
+        Rayman Raving Rabbids 2</a></b> (Nintendo Wii) - 8 months<br>
+        Part of the team that kick-started the game until the first versions
+        were approved by Nintendo. I helped by prototyping some mini-games, and
+        then was responsible for a regular mini-game and all six FPS mini-games.
+        <br>
+        As the only Gameplay Programmer on these, I wrote the code handling the
+        game mechanisms such as AI code to handle all sorts of ennemies. This
+        implied techniques such as basic path finding, collision detection and
+        linear algebra mathematics.
+      </p>
+      <p>
+        <b><a href='https://en.wikipedia.org/wiki/Ghost_Recon_Future_Soldier'>
+        Ghost Recon: Future Soldier</a></b> (XBox 360/PS3) - 5 months<br>
+        I improved re-usability, maintenance and quality of a core part of a
+        10-year old game engine written in <code>C/C++</code> with a short-term
+        goal of reducing memory usage. I started an effort to have the code
+        covered by a test suite.
+      </p>
+      <p>
+        <b>Undisclosed project</b> - 3 months<br>
+        I was responsible for experimenting gameplay ideas for an experimental
+        music-related game. This task required a lot of interaction  with the
+        Game Designer and the ability to quickly implement ideas and improve
+        them iteratively by try/fix iterations.
+      </p>
+    </li>
+    <li>
+      <div class='title'><span class='date'>2006</span>
+        Platform Engineer at
+        <a href='http://dancingdots-studio.com/'>Dancing Dots Studio</a>
+        <small>(5-month internship)</small>
+      </div>
+      <p>I wrote a 2D/3D sound engine based on OpenAL and a GUI engine based on
+      CEGUI for the PC game <i>Ride!</i>. I also wrote the prototype of the
+      rhythm game mode.</p>
     </li>
   </ul>
 </section>
@@ -122,21 +246,71 @@
 <section>
   <h2>Education</h2>
 
-  <p>Master Degree in Computer Sciences and Software Engineering</p>
-</section>
-
-<section>
-  <h2>Free Libre and Open Source Projects</h2>
-
   <ul>
-    <li>Gentoo Developer</li>
+  <li>
+  <div class='title'><span class='date'>2010</span>
+    Master's Degree in Computer Sciences,
+    <a href='http://www.insa-lyon.fr/en'>INSA Lyon</a> (France)
+  </div>
+    <p>I studied a wide range of Computer Sciences subjects including
+    Mathematics, Algorithmics, Software Quality, Project Management and various
+    programming languages. I have also been studying some Humanities topics like
+    Communication, Sociology and Languages.</p>
+    <p>I was involved in the students life as an elected student representative
+    in the Computer Sciences department's council. I was also a member of
+    various students associations: bartender in the campus bar, writing articles
+    for the newspaper, helping with the university's gala and career fair.</p>
+  </li>
+  <li>
+  <div class='title'><span class='date'>2009</span>
+    Exchange Student at
+    <a href='http://www.polymtl.ca/en/'>Polytechnique Montréal</a> (Canada)
+  </div>
+  <p>Exchange student during two semesters. I took courses related to Software
+  Quality, Project Management, UI principles and Team Management.</p>
+  </li>
   </ul>
 </section>
 
 <section>
-  <h2>Languages</h2>
+  <h2>Side Projects</h2>
 
-  <p>English, French, others...</p>
+  <ul>
+  <li>
+    <div class='title'><span class='date'>2009-2012</span>
+    <a href='http://gentoo.org'>Gentoo</a> developer</div>
+    <p>One of the developers of the Gentoo GNU/Linux distribution. I was
+    involved in the PowerPC, voip, Portage and Mozilla teams.</p>
+    <p>My work on Gentoo gave me the opportunity to contribute on various other
+    projects, amongst them: vlc, ekiga, miro, btg, ptlib, opal.</p>
+  </li>
+  <li>
+    <div class='title'><span class='date'>2008</span>
+      3D pinball game with a level editor
+    </div>
+    <p>With a <code>C++</code> backend, the game was offering a level editor in
+    <code>Java</code>, using <code>XML</code> to represent each level. I was
+    leading the team and managing the project.</p>
+  <li>
+    <div class='title'><span class='date'>2007 - 2008</span>
+    Nintendo DS Homebrew</div>
+    <p>I implemented a 3D engine and sound engine on Nintendo DS using libNDS.
+    As a homebrew project, it was done at a very low level.</p>
+  </li>
+  <li>
+    <div class='title'><span class='date'>2006 - 2007</span>
+    3D shoot'em up on MacOS X and Linux</div>
+    <p>I wrote the physics engine, the rendering engine on top of OpenGL and
+    Glut and the sound engine on top of OpenAL.</p>
+  </li>
+  <li>
+    <div class='title'><span class='date'>2002 - 2006</span>
+      Writing and paper publishing of a book
+    </div>
+    <p>Wrote an unofficial extension for Warhammer Battle. Created a non-profit
+    publishing organization to be able to publish it.</p>
+  </li>
+  </ul>
 </section>
 
 {% endblock %}
