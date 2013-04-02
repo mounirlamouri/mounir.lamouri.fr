@@ -6,11 +6,6 @@
 {% block content %}
 
 <style>
-  .todo {
-    background-color: red;
-    position: absolute;
-    left: 0px;
-  }
   li {
     list-style-type: none;
   }
@@ -59,8 +54,6 @@
   }
 
   @media print {
-    .todo { display: none; }
-
     #links, #top, #footer, #email .label {
       display: none;
     }
@@ -97,18 +90,10 @@
   }
 </style>
 
-<div class='todo'>
-  <ul>
-    <li>first re-read</li>
-    <li>second re-read</li>
-    <li>update LinkedIn</li>
-    <li>test IE</li>
-  </ul>
-</div>
-
 <header>
   <h1 id='name'>Mounir Lamouri</h1>
-  <div id='email'><span class='label'>Contact me:</span>
+  <div id='email'>
+    <span class='label'>Contact me:</span>
     <address><a href='mailto:mounir@lamouri.fr'>mounir@lamouri.fr</a></address>
   </div>
   <div id='bestviewed'>
@@ -123,18 +108,18 @@
   <p>I am a Platform Engineer looking for challenging projects that have an
   impact on people.</p>
 
-  <p>I have been working in the video-game industry for a cumulative time of 2
-  years, shipping two AAA games and one independent game. I am since then
-  working on improving the Web Platform with Mozilla.</p>
+  <p>I worked in the video-game industry for a cumulative time of 2 years,
+  shipping two AAA games and one independent game. I am since then working on
+  improving the Web Platform with Mozilla.</p>
 
   <p>I developed a keen interest in Web Standards and designing APIs for the
   web and would like to keep working on making the Web a better place.</p>
 
-  <p>Regarding code, I like to write clean, simple and tested code. My main
-  programming language is C++ but I have professional experiences with C, Java,
-  Python, Objective-C, Bash, and Javascript/HTML/CSS. However, I believe that a
-  language is a tool and a good software engineer should be able to switch from
-  one to another easily.</p>
+  <p>I like to write clean, simple and tested code. My main programming language
+  is C++ but I have professional experiences with C, Java, Python, Objective-C,
+  Bash, and Javascript/HTML/CSS. However, I believe that a language is a tool
+  and a good software engineer should be able to switch from one to another
+  easily.</p>
 </section>
 
 <section>
@@ -148,21 +133,22 @@
         I am working on new APIs for the Web Platform, mostly to support the
         <a href='http://mozilla.org/firefoxos/'>Firefox&nbsp;OS</a> project and
         to make the Web competitive against native on Mobile. Involved in most
-        API designs for Firefox&nbsp;OS, I have implemented a few of them and
-        pushed some of them to standardization bodies. I also took part of the
-        design of the security model of Firefox&nbsp;OS and implemented key
-        parts of it.
+        API designs for Firefox&nbsp;OS, I have implemented a few of them in
+        Firefox for Android and pushed some of them to standardization bodies. I
+        also took part of the design of the security model of Firefox&nbsp;OS
+        and implemented key parts of it.
       </p>
       <p>
         As a <a href='https://wiki.mozilla.org/Modules/All'>reviewer</a> for the
         HAL and HTML/DOM modules and a Mozilla
         <a href='https://www.mozilla.org/hacking/reviewers.html#the-super-reviewers'>super-reviewer</a>,
-        I do a lot of code reviews and super-reviews.
+        I do a lot of code reviews to approve patches to land in mozilla-central
+        and super-reviews to validate API changes.
       </p>
       <p>
-        I am also involved with the W3C specification process as a co-chair of
-        the <a href='http://www.w3.org/2012/sysapps/'>SysApps</a> working group
-        and an active member of the <a href='http://whatwg.org'>WHATWG</a>,
+        I am also involved in the W3C specification process as a co-chair of the
+        <a href='http://www.w3.org/2012/sysapps/'>SysApps</a> working group and
+        an active member of the <a href='http://whatwg.org'>WHATWG</a>,
         <a href='http://www.w3.org/html/wg/'>HTML</a>,
         <a href='http://www.w3.org/2009/dap/'>DAP</a> and
         <a href='http://www.w3.org/2008/webapps/wiki/Main_Page'>WebApps</a>
@@ -178,8 +164,8 @@
       <p>
         I implemented HTML5 Forms in Firefox with new features like constraint
         validation for forms, new HTML elements and new
-        <code>&lt;input&gt;</code> types. I have also been mentoring a few
-        people who have been contributing to forms.
+        <code>&lt;input&gt;</code> types. I also mentored a few contributors to
+        forms.
       </p>
     </li>
     <li>
@@ -212,14 +198,12 @@
       <p>
         <b><a href='https://en.wikipedia.org/wiki/Rayman_Raving_Rabbids_2'>
         Rayman Raving Rabbids 2</a></b> (Nintendo Wii) - 8 months<br>
-        Part of the team that kick-started the game until the first versions
-        were approved by Nintendo. I helped by prototyping some mini-games, and
-        then was responsible for a regular mini-game and all six FPS mini-games.
-        <br>
-        As the only Gameplay Programmer on these, I wrote the code handling the
-        game mechanisms such as AI code to handle all sorts of ennemies. This
-        implied techniques such as basic path finding, collision detection and
-        linear algebra mathematics.
+        I joined the team when the project was starting and left to get back to
+        school after the code freeze. I started by prototyping some mini-games,
+        and then was responsible for a regular mini-game and all six FPS
+        mini-games. As the only Gameplay Programmer on these, I wrote the code
+        handling the game mechanisms such as AI code to handle all sorts of
+        enemies.
       </p>
       <p>
         <b><a href='https://en.wikipedia.org/wiki/Ghost_Recon_Future_Soldier'>
@@ -260,8 +244,8 @@
     <a href='http://www.insa-lyon.fr/en'>INSA Lyon</a> (France)
   </div>
     <p>I studied a wide range of Computer Sciences subjects including
-    Mathematics, Algorithmics, Software Quality, Project Management and various
-    programming languages. I have also been studying some Humanities topics like
+    Mathematics, Algorithms, Software Quality, Project Management and various
+    programming languages. I also studied some Humanities topics like
     Communication, Sociology and Languages.</p>
     <p>I was involved in the students life as an elected student representative
     in the Computer Sciences department's council. I was also a member of
@@ -286,8 +270,8 @@
   <li>
     <div class='title'><span class='date'>2009-2012</span>
     <a href='http://gentoo.org'>Gentoo</a> developer</div>
-    <p>One of the developers of the Gentoo GNU/Linux distribution. I was
-    involved in the PowerPC, voip, Portage and Mozilla teams.</p>
+    <p>Volunteer developer for the Gentoo GNU/Linux distribution. I was involved
+    in the PowerPC, voip, Portage and Mozilla teams.</p>
     <p>My work on Gentoo gave me the opportunity to contribute on various other
     projects, amongst them: vlc, ekiga, miro, btg, ptlib, opal.</p>
   </li>
@@ -295,10 +279,9 @@
     <div class='title'><span class='date'>2008</span>
       3D pinball game with a level editor
     </div>
-    <div class='todo'>re-write, hard to understand; hard to understand it's a game development</div>
-    <p>With a <code>C++</code> backend, the game was offering a level editor in
-    <code>Java</code>, using <code>XML</code> to represent each level. I was
-    leading the team and managing the project.</p>
+    <p>We wrote the backend of the game in <code>C++</code> and the level editor
+    in <code>Java</code>. The levels were saved in <code>XML</code>.
+    I was leading the team and managing the project.</p>
   <li>
     <div class='title'><span class='date'>2007 - 2008</span>
     Nintendo DS Homebrew</div>
@@ -308,16 +291,15 @@
   <li>
     <div class='title'><span class='date'>2006 - 2007</span>
     3D shoot'em up on MacOS X and Linux</div>
-    <div class='todo'>hard to understand it's a game development</div>
-    <p>I wrote the physics engine, the rendering engine on top of OpenGL and
-    Glut and the sound engine on top of OpenAL.</p>
+    <p>I made this game with a friend. I worked on the rendering engine on top
+    of OpenGL/Glut, the sound engine on top of OpenAL and the physics engine.</p>
   </li>
   <li>
     <div class='title'><span class='date'>2002 - 2006</span>
       Writing and paper publishing of a book
     </div>
-    <p>Wrote an unofficial extension for Warhammer Battle. Created a non-profit
-    publishing organization to be able to publish it.</p>
+    <p>I wrote an unofficial extension for Warhammer Battle and created a
+    non-profit publishing organization to be able to publish it.</p>
   </li>
   </ul>
 </section>
