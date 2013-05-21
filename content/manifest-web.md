@@ -1,5 +1,5 @@
 Title: The Web Manifest
-Date: 2013-05-14 22:00
+Date: 2013-05-21 20:00
 Tags:
 Planets: mozilla
 Status: draft
