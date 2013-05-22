@@ -133,9 +133,9 @@ behaviour of changing the URL of the manifest while the page is loaded.
 
 Finally, the last technical question is about the scope of the manifest. Should
 the manifest apply to every web page under the same origin? Should it only apply
-to web pages that link to it? I would tend to prefer the former solution, mostly
-because it will keep us consistent with the way hosted web applications are
-specified.
+to web pages that link to it? Given that we want to allow multiple hosted web
+applications per origin I guess the best way to handle that would be to ask the
+developers to link every page to the manifest they expect to be used.
 
 Feedback
 --------
