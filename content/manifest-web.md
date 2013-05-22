@@ -83,17 +83,18 @@ runtime but there is still a major lack that needs to be addressed to make the
 manifest a key part of the Web Platform: for the moment, those manifests are not
 discoverable. That means that there is no way for a service such as a search
 engine to allow you to search installable web applications on the web. There is
-also no way for a <abbr title='User Agent'>UA</abbr> to tell you that you can
-create a shortcut or "install" (depending on the approach they want to have) the
-web site you are visiting.
+also no reliable way for a <abbr title='User Agent'>UA</abbr> to "bookmark to
+homescreen" or "install as an application" a website without doing some wild
+guesses. Both IE and iOS had to create proprietary extensions to make that
+reliable.
 
 The main reason why we are moving the manifest specification from SysApps to
 WebApps is to make the manifest go beyond packaged or hosted web applications
 and have it available to any web site.
 
 First of all, allowing web pages to declare a manifest should solve the problems
-mentioned above: the manifests would be discoverable and UA such as web crawlers
-could take advantage of this information.
+mentioned above: the manifests would be discoverable and HTML consumers (eg. UAs
+or web crawlers) could take advantage of this information.
 
 Second, and probably a more controversial benefit is that some declarative
 information that doesn't really fit into CSS or HTML could go into this
