@@ -7,7 +7,7 @@ SITEURL = ''
 
 THEME = 'theme'
 
-TIMEZONE = 'Europe/London'
+TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
@@ -16,7 +16,14 @@ ARTICLE_SAVE_AS='{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_LANG_URL='{date:%Y}/{date:%m}/{slug}-{lang}.html'
 ARTICLE_LANG_SAVE_AS='{date:%Y}/{date:%m}/{slug}-{lang}.html'
 
-FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
+#FILES_TO_COPY = (('extra/robots.txt', 'robots.txt'),)
+STATIC_PATHS = [
+    'extra/robots.txt',
+    'images',
+]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+}
 
 READERS = { 'html': None }
 TEMPLATE_PAGES = { 'static/resume.html': 'resume.html' }
@@ -26,12 +33,6 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 DEFAULT_PAGINATION = False
-
-# For planets plugin.
-PLANET_FEED_ATOM = "feeds/planet.%s.atom.xml"
-import sys;
-sys.path.append('plugins')
-PLUGINS = [ 'planets' ]
 
 # Not using those for the moment.
 LINKS =  ()

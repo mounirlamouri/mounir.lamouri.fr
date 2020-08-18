@@ -38,5 +38,5 @@ for the audience.
 
 It was a nice experience and I'm glad to have spread Firefox and Mozilla!
 
-[![](http://farm3.static.flickr.com/2561/4110277649_01b3573f80.jpg "")](http://www.flickr.com/photos/98076244@N00/4110277649/)
-[![](http://farm3.static.flickr.com/2513/4110277663_94442d6358.jpg "")](http://www.flickr.com/photos/98076244@N00/4110277663/)
+[![classroom shot](http://farm3.static.flickr.com/2561/4110277649_01b3573f80.jpg "")](http://www.flickr.com/photos/98076244@N00/4110277649/)
+[![classroom shot](http://farm3.static.flickr.com/2513/4110277663_94442d6358.jpg "")](http://www.flickr.com/photos/98076244@N00/4110277663/)

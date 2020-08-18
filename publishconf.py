@@ -5,7 +5,7 @@ import sys
 sys.path.append('.')
 from pelicanconf import *
 
-SITEURL = 'http://mounir.lamouri.fr'
+SITEURL = 'https://mounir.lamouri.fr'
 
 DELETE_OUTPUT_DIRECTORY = True
 
