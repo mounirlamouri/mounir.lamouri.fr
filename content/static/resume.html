@@ -16,8 +16,16 @@
   .title small {
     font-weight: normal;
   }
+  .sub-title {
+    font-weight: bold;
+    margin-bottom: 0.75em;
+  }
   .date {
     margin-right: 1em;
+  }
+  .sub-title > .date {
+    font-weight: normal;
+    margin-right: 1.2em;
   }
   p {
     margin-bottom: 0.75em;
@@ -25,6 +33,20 @@
   address {
     display: inline-block;
     margin: 0;
+  }
+  .company {
+    font-size: 1.05em;
+  }
+  .location {
+    text-align: right;
+    font-weight: normal;
+    display: inline-block;
+    float: right;
+    /*  */
+  }
+  .location > img {
+    height: 18px;
+    vertical-align: text-bottom;
   }
   #content a,
   #content a:link,
@@ -44,9 +66,17 @@
       margin-top: 1em;
     }
     .title {
-      text-indent: -1.5em;
+      text-indent: -8.5em;
       margin-top: 1.5em;
-      margin-bottom: 1.5em;
+      margin-bottom: 1.0em;
+    }
+    .sub-title {
+      text-indent: -8.5em;
+    }
+    .date {
+      display: inline-block;
+      width: 7em;
+      text-align: right;
     }
     #content a {
       border-bottom: 1px black dotted;
@@ -135,59 +165,115 @@
   <ul>
     <li>
       <div class='title'><span class='date'>2013 - Present</span>
-      <a href='https://google.com'>Software Engineer at Google</a></div>
+      <span class='company'><a href='https://google.com'>Google</a></span></div>
       <p>
-        <b>Staff Software Engineer, Meet</b><br>
-        Seattle, WA, USA<br>
+        <div class='sub-title'>
+          <span class='date'>2021 - Present</span>
+          Staff Software Engineer, Meet
+          <span class='location'>
+            <img src='/images/outline_location_city_black_18dp.png'>
+            Seattle, WA, USA
+          </span>
+        </div>
         <p>
-          TODO
+          Tech Lead Manager for Meet's Libraries team, a frontend team providing
+          the model and media layers to the UI/app layers. The team is
+          responsible for the reliability, performance and coherence of the Meet
+          platform across Android, iOS, and Web.
+        </p>
+        <p>
+          The group is split into 4 sub-teams for a total of up to 17 engineers
+          directly reporting to me.
         </p>
       </p>
       <p>
-        <b>Staff Software Engineer on Chrome Media</b><br>
-        Seattle, WA, USA (Since 2019); Kitchener, ON, Canada (2018 - 2019)<br>
+        <div class='sub-title'>
+          <span class='date'>2018 - 2021</span>
+          Staff Software Engineer, Chrome Media
+          <span class='location'>
+            <img src='/images/outline_location_city_black_18dp.png'>
+            Kitchener, ON, Canada<br>Seattle, WA, USA
+          </span>
+        </div>
         <p>
-          Architect on the Chrome Media team. I design user facing features,
-          backend services, and APIs to improve the user and developer
-          experiences.
+          Tech Lead Manager on Chrome Media, leading two teams (11 reports)
+          working on making Chrome and Chrome&nbsp;OS best-in-class to consume
+          audio, video, AR, and VR.
         </p>
         <p>
-          Among the main accomplishements: AR and VR APIs for the Web, a video
-          recommendation surface, an automatic captioning interface, a video
-          compositing system to enable Picture-in-Picture, an improved autoplay
-          policy, a modular media control to ease updates, and a system to
-          allow better control of media playback by websites and users. Also
-          designed key components to allow an improved unified media experience
-          on the Chrome OS browser.
+          Initiated and delivered an industry-leading <a
+          href='https://blog.google/products/chrome/live-caption-chrome/' target='_blank'>automatic
+          captioning feature in Chrome</a> using on-device machine learning.<br>
+          Drove <a href='https://9to5google.com/2021/01/08/chrome-kaleidoscope-streaming-service/'
+          target='_blank'>in-browser media recommendation hub</a> based on browsing history
+          and user profile. Project was fully functional but didn't launch.
         </p>
         <p>
-          Chair of the <a href='https://www.w3.org/2019/05/media-wg-charter.html'>World Wide Web Consortium Media Working Group</a>.
+          Led various projects to improve media management such as Global Media
+          Controls on (<a href='https://blog.google/products/chrome/manage-audio-and-video-in-chrome/'>Desktop</a>, <a href='https://developers.google.com/web/updates/2017/02/media-session'
+          target='_blank'>Mobile</b>, <a href='https://www.google.com/chromebook/whatsnew/march-2021/#:~:text=Easily%20access%20your%20media%20controls'
+          target='_blank'>Chrome OS</a>), <a href='https://blog.google/products/chromebooks/whats-new-december2019/'
+          target='_blank'>lockscreen integration</a>, or <a
+          href='https://developers.google.com/web/updates/2018/10/watch-video-using-picture-in-picture'
+          target='_blank'>Picture-in-Picture</a>.
         </p>
+        <p>
+          Drove launch of WebXR in Chrome Android, <a
+          href='https://chromeunboxed.com/chrome-81-brings-ar-to-the-browser-with-webxr-and-its-blowing-my-mind/'
+          target='_blank'>pioneering</a> AR on the Web.
+        </p>
+        <p>
+          Started and co-chaired the <acronym
+          title='World Wide Web Consortium'>W3C</acronym> <a
+          href='https://www.w3.org/2019/05/media-wg-charter.html'
+          target='_href'>Media Working Group</a>, facilitating APIs
+          standardisation across the industry.
+        </p>
+        <!--
+          Set aside: media controls, surface layer
+        -->
       </p>
       <p>
-        <b>Staff Software Engineer on Chrome Android</b><br>
-        London, United Kingdom (2014 - 2018)<br>
+        <div class='sub-title'><span class='date'>2014 - 2018</span>
+          Staff Software Engineer, Web Platform
+          <span class='location'>
+            <img src='/images/outline_location_city_black_18dp.png'>
+            London, United Kingdom
+          </span>
+        </div>
         <p>
-          I authored mobile-focused web specifications, designed APIs and
-          implemented them in Chrome such as <a
+          Kicked off and led a team of 7 engineers focused on improving the web
+          media experience. Brought internal focused on the <a
+          href='https://www.youtube.com/watch?v=_ssDaecATCM&t=1284s' target='_blank'>problem
+          space</a>. Initiated industry-changing projects such as <a
+          href='https://blog.chromium.org/2017/09/unified-autoplay.html' target_='blank'>autoplay
+          policy</a> changes in Chrome.<br>
+          Drove APIs such as: <a
+          href='https://wicg.github.io/mediasession/' target='_blank'>Media
+          Session</a>, <a href='https://w3c.github.io/media-capabilities/'
+          target='_blank'>Media Capabilities</a>, and <a
+          href='https://www.w3.org/TR/remote-playback/' target='_blank'>Remote
+          Playback</a>.
+        </p>
+        <p>
+          Designed APIs for a mobile-first web, authored <acronym
+          title='World Wide Web Consortium'>W3C</acronym> specifications, and
+          implemented them in Chrome: <a
           href='https://www.w3.org/TR/appmanifest/'>Web Manifest</a>, <a
-          href='https://www.w3.org/TR/permissions/'>Permissions API</a> and <a
+          href='https://www.w3.org/TR/permissions/'>Permissions</a> and <a
           href='https://www.w3.org/TR/screen-orientation/'>Screen
-          Orientation</a>. Also contributed to the Push Notifications and
+          Orientation</a>. Contributed to the Push Notifications and
           Service Worker.
         </p>
-        <p>
-          Designed and implemented in Chrome Android counterpart features
-          launching in new Android releases: <a
-          href='https://wicg.github.io/mediasession/' target='_blank'>Media Session</a>, <a
-          href='https://www.w3.org/TR/remote-playback/' target='_blank'>Remote Playback</a>, and
-          <a href='https://wicg.github.io/picture-in-picture/' target='_blank'>
-          Picture-in-Picture</a>.
-        </p>
       </p>
       <p>
-        <b>Software Engineer, Chrome OS</b><br>
-        Sydney, NSW, Australia (2013 - 2014)<br>
+        <div class='sub-title'><span class='date'>2013 - 2014</span>
+          Software Engineer, Chrome OS
+          <span class='location'>
+            <img src='/images/outline_location_city_black_18dp.png'>
+            Sydney, NSW, Australia
+          </span>
+        </div>
         <p>
           Implemented new features for the Chrome Apps window management APIs
           and improved the internal cross-platform window management layer.
@@ -195,10 +281,18 @@
       </p>
     </li>
     <li>
-      <div class='title'><span class='date'>2010 - 2013</span>
-      Senior Software Engineer at <a href='https://mozilla.org' target='_blank'>Mozilla</a> in London, United Kingdom</div>
+      <div class='title'>
+        <span class='date'>2010 - 2013</span>
+        <span class='company'><a href='https://mozilla.org' target='_blank'>Mozilla</a></span>
+      </div>
       <p>
-        <b>Senior Software Engineer, Firefox&nbsp;OS (2011-2013)</b>
+        <div class='sub-title'><span class='date'>2011 - 2013</span>
+          Senior Software Engineer, Firefox&nbsp;OS
+          <span class='location'>
+            <img src='/images/outline_location_city_black_18dp.png'>
+            London, United Kingdom
+          </span>
+        </div>
         <p>
           Support <a href='https://en.wikipedia.org/wiki/Firefox_OS' target='_blank'>
           Firefox&nbsp;OS</a> by enabling the Web Platform to be a mobile app
@@ -221,7 +315,13 @@
         </p>
       </p>
       <p>
-        <b>Senior Software Engineer, Firefox (2010-2011)</b>
+        <div class='sub-title'><span class='date'>2010 - 2011</span>
+          Senior Software Engineer, Firefox
+          <span class='location'>
+            <img src='/images/outline_location_city_black_18dp.png'>
+            Paris, France
+          </span>
+        </div>
         <p>
           Responsible for the implementation of <a
           href='https://html.spec.whatwg.org/multipage/forms.html#forms' target='_blank'>HTML5 Forms</a> in Firefox.
@@ -240,7 +340,11 @@
   <li>
   <div class='title'><span class='date'>2010</span>
     Master's Degree in Computer Sciences,
-    <a href='https://www.insa-lyon.fr/en' target='_blank'>INSA Lyon</a> (France)
+    <a href='https://www.insa-lyon.fr/en' target='_blank'>INSA Lyon</a>
+    <span class='location'>
+      <img src='/images/outline_location_city_black_18dp.png'>
+      Lyon, France
+    </span>
   </div>
   <!-- Remove details about education.
     <p>
@@ -263,14 +367,17 @@
     <h2>Other Work Experiences</h2>
     <li>
       <div class='title'><span class='date'>2007 - 2009</span>
-        Gameplay Programmer/Platform Engineer at
-        <a href='https://www.ubisoft.com/en-us/' target='_blank'>Ubisoft</a> in Paris, France
+        <span class='company'><a href='https://www.ubisoft.com/en-us/' target='_blank'>Ubisoft</a></span>
+        <span class='location'>
+          <img src='/images/outline_location_city_black_18dp.png'>
+          Paris, France
+        </span>
       </div>
       <p>
           Mix of internships and fixed-term contract while at university.
         </p>
       <p>
-        <b><a href='https://en.wikipedia.org/wiki/Rayman_Raving_Rabbids_2' target='_blank'>
+        <b>Gameplay Programmer, <a href='https://en.wikipedia.org/wiki/Rayman_Raving_Rabbids_2' target='_blank'>
         Rayman Raving Rabbids 2</a></b> (Nintendo Wii) - 8 months<br>
         Member of the team from inception to code freeze. Prototyped mini-game
         ideas in collaboration with level/game designers. Owned one standalone
@@ -278,14 +385,14 @@
         implemented game mechanics and AI behaviours.
       </p>
       <p>
-        <b><a href='https://en.wikipedia.org/wiki/Ghost_Recon_Future_Soldier' target='_blank'>
+        <b>Platform Engineer, <a href='https://en.wikipedia.org/wiki/Ghost_Recon_Future_Soldier' target='_blank'>
         Ghost Recon: Future Soldier</a></b> (XBox 360/PS3) - 5 months<br>
         Improved re-usability, maintenance and quality of a core part of a
         10-year old game engine in order to improve key metrics such as memory
         usage.
       </p>
       <p>
-        <b>Undisclosed Project</b> (Nintendo Wii) - 3 months<br>
+        <b>Gameplay Programmer, Undisclosed Project</b> (Nintendo Wii) - 3 months<br>
         Prototyped gameplay ideas for an experimental music-related game in a
         small team. It required close collaboration with game/level designers
         and ability to quickly implement ideas and improve them through trial
