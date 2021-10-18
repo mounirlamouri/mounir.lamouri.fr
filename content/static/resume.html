@@ -42,11 +42,11 @@
     font-weight: normal;
     display: inline-block;
     float: right;
-    /*  */
   }
   .location > img {
     height: 18px;
     vertical-align: text-bottom;
+    margin: 0;
   }
   #content a,
   #content a:link,
@@ -58,14 +58,8 @@
     font-style: normal;
   }
 
-  @media screen, projection {
-    #name, #bestviewed {
-      display: none;
-    }
-    h2 {
-      margin-top: 1em;
-    }
-    .title {
+
+  .title {
       text-indent: -8.5em;
       margin-top: 1.5em;
       margin-bottom: 1.0em;
@@ -77,6 +71,16 @@
       display: inline-block;
       width: 7em;
       text-align: right;
+    }
+
+
+
+  @media screen, projection {
+    #name, #bestviewed {
+      display: none;
+    }
+    h2 {
+      margin-top: 1em;
     }
     #content a {
       border-bottom: 1px black dotted;
@@ -90,14 +94,20 @@
     #name {
       display: block;
     }
-    .title {
-      text-indent: -0.5em;
+    acronym[title] {
+      text-decoration: none;
+    }
+    .location > img {
+      float: none !important; /* override default style */
     }
     a:link:after, a:visited:after {
       content: "";
     }
     ul {
       padding-left: 0px;
+    }
+    section {
+      margin-left: 8.5em;
     }
     abbr {
       border-bottom: none;
@@ -111,6 +121,13 @@
     }
     header {
       margin-bottom: 4em;
+    }
+
+    @page:first {
+      margin-top: 1cm;
+    }
+    @page {
+      margin-top: 2cm;
     }
 
     /* from blog theme */
@@ -330,6 +347,52 @@
         </p>
       </p>
     </li>
+    <li>
+      <div class='title'><span class='date'>2007 - 2009</span>
+        <span class='company'><a href='https://www.ubisoft.com/en-us/' target='_blank'>Ubisoft</a></span>
+        <span class='location'>
+          <img src='/images/outline_business_black_18dp.png'>
+          Paris, France
+        </span>
+      </div>
+      <p>
+          Mix of internships and fixed-term contracts while at university.
+        </p>
+      <p>
+        <b>Gameplay Programmer, <a href='https://en.wikipedia.org/wiki/Rayman_Raving_Rabbids_2' target='_blank'>
+        Rayman Raving Rabbids 2</a></b> (Nintendo Wii) - 8 months<br>
+        Member of the team from inception to code freeze. Prototyped mini-game
+        ideas in collaboration with level/game designers. Owned one standalone
+        mini-game and all six FPS mini-games. Sole engineer on those, I
+        implemented game mechanics and AI behaviours.
+      </p>
+      <p>
+        <b>Platform Engineer, <a href='https://en.wikipedia.org/wiki/Ghost_Recon_Future_Soldier' target='_blank'>
+        Ghost Recon: Future Soldier</a></b> (XBox 360/PS3) - 5 months<br>
+        Improved re-usability, maintenance and quality of a core part of a
+        10-year old game engine in order to improve key metrics such as memory
+        usage.
+      </p>
+      <p>
+        <b>Gameplay Programmer, Undisclosed Project</b> (Nintendo Wii) - 3 months<br>
+        Prototyped gameplay ideas for an experimental music-related game in a
+        small team. It required close collaboration with game/level designers
+        and ability to quickly implement ideas and improve them through trial
+        and errors.
+      </p>
+    </li>
+  <!--
+    <li>
+      <div class='title'><span class='date'>2006</span>
+        Platform Engineer Intern at
+        <a href='https://fr.wikipedia.org/wiki/Dancing_Dots' target='_blank'>Dancing Dots Studio</a> in Paris, France
+        <small>(5-month)</small>
+      </div>
+      <p>Wrote a sound engine based on OpenAL, a GUI engine based on
+      CEGUI, and a rhythm game prototype for <a href='https://www.gameclassification.com/EN/games/36386-Ride/index.html'
+      target='_blank'></a><i>Ride!</i></a>.</p>
+    </li>
+  -->
   </ul>
 </section>
 
@@ -363,67 +426,16 @@
 </section>
 
 <section>
-  <ul>
-    <h2>Other Work Experiences</h2>
-    <li>
-      <div class='title'><span class='date'>2007 - 2009</span>
-        <span class='company'><a href='https://www.ubisoft.com/en-us/' target='_blank'>Ubisoft</a></span>
-        <span class='location'>
-          <img src='/images/outline_business_black_18dp.png'>
-          Paris, France
-        </span>
-      </div>
-      <p>
-          Mix of internships and fixed-term contract while at university.
-        </p>
-      <p>
-        <b>Gameplay Programmer, <a href='https://en.wikipedia.org/wiki/Rayman_Raving_Rabbids_2' target='_blank'>
-        Rayman Raving Rabbids 2</a></b> (Nintendo Wii) - 8 months<br>
-        Member of the team from inception to code freeze. Prototyped mini-game
-        ideas in collaboration with level/game designers. Owned one standalone
-        mini-game and all six FPS mini-games. Sole engineer on those, I
-        implemented game mechanics and AI behaviours.
-      </p>
-      <p>
-        <b>Platform Engineer, <a href='https://en.wikipedia.org/wiki/Ghost_Recon_Future_Soldier' target='_blank'>
-        Ghost Recon: Future Soldier</a></b> (XBox 360/PS3) - 5 months<br>
-        Improved re-usability, maintenance and quality of a core part of a
-        10-year old game engine in order to improve key metrics such as memory
-        usage.
-      </p>
-      <p>
-        <b>Gameplay Programmer, Undisclosed Project</b> (Nintendo Wii) - 3 months<br>
-        Prototyped gameplay ideas for an experimental music-related game in a
-        small team. It required close collaboration with game/level designers
-        and ability to quickly implement ideas and improve them through trial
-        and errors.
-      </p>
-    </li>
-    <li>
-      <div class='title'><span class='date'>2006</span>
-        Platform Engineer Intern at
-        <a href='https://fr.wikipedia.org/wiki/Dancing_Dots' target='_blank'>Dancing Dots Studio</a> in Paris, France
-        <small>(5-month)</small>
-      </div>
-      <p>Wrote a sound engine based on OpenAL, a GUI engine based on
-      CEGUI, and a rhythm game prototype for <a href='https://www.gameclassification.com/EN/games/36386-Ride/index.html'
-      target='_blank'></a><i>Ride!</i></a>.</p>
-    </li>
-  </ul>
-</section>
-
-<section>
-  <h2>Other Projects</h2>
+  <h2>FLOSS Experience</h2>
 
   <ul>
   <li>
     <div class='title'><span class='date'>2009 - 2012</span>
     <a href='https://www.gentoo.org/' target='_blank'>Gentoo</a> developer</div>
     <p>
-      Volunteer for the Gentoo GNU/Linux distribution. Member of the PowerPC,
+      Volunteer developer for the Gentoo GNU/Linux distribution. Member of the PowerPC,
       voip, Portage and Mozilla teams.
-    </p>
-    <p>
+      <br>
       <a href='https://developers.google.com/open-source/soc/' target='_blank'>
       Google Summer of Code</a> (2009): Implemented a <a href='https://en.wikipedia.org/wiki/Portage_%28software%29' target='_blank'>
       Gentoo Portage</a> backend for <a href='https://www.freedesktop.org/software/PackageKit/' target='_blank'>PackageKit</a>.
